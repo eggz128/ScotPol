@@ -11,6 +11,6 @@ describe('handling alerts or confirms', function () {
         })
         cy.contains('Log Out').click() //Spawns a JS Confirm. Without previos cy.on() Cypress will just log the message and OK
         cy.wait(10000)
-
+        //Test CI
     });
 });
