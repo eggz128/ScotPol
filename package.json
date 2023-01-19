@@ -1,0 +1,17 @@
+{
+  "name": "scotpolice",
+  "version": "1.0.0",
+  "description": "Cypress demo",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "npx cypress run --spec ./cypress/e2e/Tests/**/*.cy.js",
+    "chromeheaded": "npx cypress run --spec ./cypress/e2e/Tests/**/*.cy.js --headed --browser chrome",
+    "chromeheadedrecord": "npx cypress run --spec ./cypress/e2e/Tests/**/*.cy.js --headed --browser chrome --record --key fdf3feb5-6e52-4e03-a73c-07519f34a883"
+  },
+  "author": "Steve Powell",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/grep": "^3.1.3",
+    "cypress": "^12.3.0"
+  }
+}
