@@ -1,6 +1,8 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  experimentalWebKitSupport: true,
+  experimentalStudio: true,
   projectId: "9cnfp5",
   defaultCommandTimeout: 8000,
   reporter: "junit",

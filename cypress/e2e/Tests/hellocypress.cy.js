@@ -49,6 +49,15 @@ describe('My First Test Suite', function () { //Mocha Suite
         cy.log("Finished")
         cy.log("Yes really")
     });
+
+    it.only('CLears a form by running some js', function () {
+        cy.visit('https://www.edgewordstraining.co.uk/webdriver2/sdocs/auth.php')
+        cy.get('#username').type("Something")
+        cy.wait(1000)
+        cy.window().then(win=>{
+            win.clearLogin();
+        })
+    });
 });
 
 
