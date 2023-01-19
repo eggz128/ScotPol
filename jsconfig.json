@@ -1,0 +1,6 @@
+{
+    "include": [
+        "cypress/**/*.js",
+        "./node_modules/cypress"
+    ]
+}
